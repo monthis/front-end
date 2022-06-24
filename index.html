@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css'
+        integrity='sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=='
+        crossorigin='anonymous' />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.min.css">
+    <title>Front End Test</title>
+</head>
+
+<body>
+    <div class="container" id="content">
+        <section class="container">
+            <div class="row">
+                <div class="col-xl d-flex flex-column justify-content-center align-items-center">
+                    <h2>Checkout</h2>
+                    <hr />
+                </div>
+            </div>
+            <form>
+                <div class="row">
+                    <div class="col-sm-12 col-xl-3">
+                        <h3>Create Login</h3>
+                        <p>Teachers & students share one login</p>
+                        <div class="form-row">
+                            <div class="form-group col-xl-12">
+                                <input type="text" id="username" name="username" class="form-control"
+                                    placeholder="Username">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-xl-12">
+                                <input type="password" id="password" name="password" class="form-control"
+                                    placeholder="Enter your password">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-xl-12">
+                                <input type="password" id="pin_number" name="pin_number" class="form-control"
+                                    pattern="[0-9]*" maxlength="4" placeholder="Create a 4-digit PIN">
+                            </div>
+                        </div>
+                        <p>PIN is for access to the manage account page.</p>
+                    </div>
+                    <div class="col-sm-12 col-xl-3">
+                        <h3>Customer Information</h3>
+                        <p>For the person/organization paying</p>
+                        <div class="form-row">
+                            <div class="form-group col-xl-6">
+                                <input type="text" id="customer_name" name="customer_name" class="form-control"
+                                    placeholder="Your Name">
+                            </div>
+                            <div class="form-group col-xl-6">
+                                <select class="form-control">
+                                    <option value="Librarian" selected>Librarian</option>
+                                    <option value="Other">Other Option</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-xl-12">
+                                <input type="email" id="customer_email" name="customer_email" class="form-control"
+                                    placeholder="Your Email">
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group col-xl-12">
+                                <input type="text" id="customer_school_name" name="customer_school_name"
+                                    class="form-control" placeholder="School Name">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-xl-12">
+                                <input type="text" id="customer_billing_address" name="customer_billing_address"
+                                    class="form-control" placeholder="Billing Address">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-xl-4">
+                                <input type="text" id="customer_city" name="customer_city" class="form-control"
+                                    placeholder="City">
+                            </div>
+                            <div class="form-group col-xl-4">
+                                <select class="form-control">
+                                    <option value="AL">AL</option>
+                                    <option value="AK">AK</option>
+                                    <option value="AR">AR</option>
+                                    <option value="AZ">AZ</option>
+                                    <option value="CA">CA</option>
+                                    <option value="CO">CO</option>
+                                    <option value="CT">CT</option>
+                                    <option value="DC">DC</option>
+                                    <option value="DE">DE</option>
+                                    <option value="FL">FL</option>
+                                    <option value="GA">GA</option>
+                                    <option value="HI">HI</option>
+                                    <option value="IA">IA</option>
+                                    <option value="ID">ID</option>
+                                    <option value="IL">IL</option>
+                                    <option value="IN">IN</option>
+                                    <option value="KS">KS</option>
+                                    <option value="KY">KY</option>
+                                    <option value="LA">LA</option>
+                                    <option value="MA">MA</option>
+                                    <option value="MD">MD</option>
+                                    <option value="ME">ME</option>
+                                    <option value="MI">MI</option>
+                                    <option value="MN">MN</option>
+                                    <option value="MO">MO</option>
+                                    <option value="MS">MS</option>
+                                    <option value="MT">MT</option>
+                                    <option value="NC">NC</option>
+                                    <option value="NE">NE</option>
+                                    <option value="NH">NH</option>
+                                    <option value="NJ">NJ</option>
+                                    <option value="NM">NM</option>
+                                    <option value="NV">NV</option>
+                                    <option value="NY">NY</option>
+                                    <option value="ND">ND</option>
+                                    <option value="OH">OH</option>
+                                    <option value="OK">OK</option>
+                                    <option value="OR">OR</option>
+                                    <option value="PA">PA</option>
+                                    <option value="RI">RI</option>
+                                    <option value="SC">SC</option>
+                                    <option value="SD">SD</option>
+                                    <option value="TN">TN</option>
+                                    <option value="TX">TX</option>
+                                    <option value="UT">UT</option>
+                                    <option value="VT">VT</option>
+                                    <option value="VA">VA</option>
+                                    <option value="WA">WA</option>
+                                    <option value="WI">WI</option>
+                                    <option value="WV">WV</option>
+                                    <option value="WY">WY</option>
+                                </select>
+                            </div>
+                            <div class="form -group col-xl-4">
+                                <input type="text" id="customer_postal_code" name="customer_postal_code"
+                                    class="form-control" placeholder="ZIP">
+                            </div>
+                        </div>
+                        <a href="#">Click here for international address</a>
+                    </div>
+                    <div class="col-sm-12 col-xl-3">
+                        <h3>Secure Payment</h3>
+                        <p>Choose payment method below</p>
+                        <div class="form-row">
+                            <div class="form-group col-xl-12">
+                                <div class="form-control payment-selector" data-index="credit_card">
+                                    <i class="fa-regular fa-circle"></i>Credit/Debit Card
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-xl-12">
+                                <div class="form-control payment-selector" data-index="purchase_order">
+                                    <i class="fa-regular fa-circle"></i>Purchase Order
+                                </div>
+                            </div>
+                        </div>
+
+                        <input type="hidden" id="payment_type" name="payment_type">
+
+                        <!-- Credit Card Inputs-->
+                        <div id="credit_card_content" class="payment-content">
+                            <div class="form-row">
+                                <div class="form-group col-xl-12">
+                                    <input type="number" id="credit_card_number" name="credit_card_number"
+                                        class="form-control" placeholder="Card Number">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-xl-4">
+                                    <input type="number" id="credit_card_month" name="credit_card_month"
+                                        class="form-control" maxlength="2" placeholder="MM">
+                                </div>
+                                <div class="form-group col-xl-4">
+                                    <input type="number" id="credit_card_year" name="credit_card_year"
+                                        class="form-control" maxlength="2" placeholder="YY">
+                                </div>
+                                <div class="form-group col-xl-4">
+                                    <input type="text" id="credit_card_cvc" name="credit_card_cvc" class="form-control"
+                                        placeholder="CVC">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <button type="submit" class="btn btn-primary"><i class="fa-solid fa-lock"></i> Pay
+                                    Now</button>
+                            </div>
+                        </div>
+
+                        <!-- Purchase Order Inputs -->
+                        <div id="purchase_order_content" class="payment-content">
+                            <div class="form-row">
+                                <div class="form-group col-xl-12">
+                                    <input type="tel" id="purchase_order_phone" name="purchase_order_phone"
+                                        class="form-control" placeholder="Your Phone Number">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-xl-12">
+                                    <input type="text" id="purchase_order_billing_name"
+                                        name="purchase_order_billing_name" class="form-control"
+                                        placeholder="Billing Person Name">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-xl-12">
+                                    <input type="email" id="purchase_order_billing_email"
+                                        name="purchase_order_billing_email" class="form-control"
+                                        placeholder="Billing Person Email">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-check">
+                                    <div class="form-group col-xl-12">
+                                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                        <label class="form-check-label" for="exampleCheck1">
+                                            By checking this box, I agree to pay $795 and will submit a PO within 10
+                                            business days.
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <button type="submit" class="btn btn-primary"><i class="fa-solid fa-lock"></i> Activate
+                                    & Send Invoice</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-xl-3">
+                        <div class="purchase_order_content payment-content">
+                            <div class="promotion-alert row">
+                                <i class="fa-regular fa-bell"></i>
+                                <div>
+                                    <strong>January Promotion Applied</strong>
+                                    <p>9 Months Free Will Be Auto-Added To Plan</p>
+                                </div>
+                            </div>
+                            <h4 class="d-flex justify-content-center text-color">Order Summary</h4>
+                            <h4>School Yearly Plan</h4>
+                            <p><strong class="accent-color">Instructions</strong><br />
+                                Please submit a PO within 10 days to keep your account active. After activating you will
+                                be emailed an invoice. Submit your PO via:<br />
+                                Fax:<br />
+                                <strong>(707) 312-8176</strong><br />
+                                Email:<br />
+                                <strong><a
+                                        href="mailto:order@generationgenius.com">mailto:order@generationgenius.com</a></strong>
+                            <div class="form-row">
+                                <div class="form-group col-xl-12">
+                                    <select class="form-control">
+                                        <option value="795">Year @ $795 per year</option>
+                                        <option value="other">Other Option</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xl-6">
+                                    Total
+                                </div>
+                                <div class="col-xl-6 d-flex justify-content-end">
+                                    <strong>$795</strong>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="credit_card_content payment-content">
+                            <h4 class="d-flex justify-content-center text-color">Order Summary</h4>
+                            <h4>School Yearly Plan</h4>
+                            <p>This is a yearly recurring subscription paid once a year at $795. Cancel any time with 1
+                                click on the manage account page. We send email reminders 30 days before each renewal.
+                            </p>
+                            <div class="form-row">
+                                <div class="form-group col-xl-12">
+                                    <select class="form-control">
+                                        <option value="795">Year @ $795 per year</option>
+                                        <option value="other">Other Option</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xl-6">
+                                    Total
+                                </div>
+                                <div class="col-xl-6 d-flex justify-content-end mb-20">
+                                    <strong>$795</strong>
+                                </div>
+                            </div>
+                            <div class="promotion-alert row">
+                                <i class="fa-regular fa-bell"></i>
+                                <div>
+                                    <strong>January Promotion Applied</strong>
+                                    <p>9 Months Free Will Be Auto-Added To Plan</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </section>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+    <script>
+
+        let $payment_selector = $(".payment-selector");
+
+        $payment_selector.click(function () {
+            let payment_index = $(this).data("index");
+
+            $payment_selector.css("border", "1px solid #fff");
+            $payment_selector.children("i").removeClass().addClass("fa-regular fa-circle-check");
+            $(this).css("border", "1px solid #F17E01");
+            $(this).children("i").removeClass().addClass("fa-solid fa-circle-check accent-color");
+            $(".payment-content").hide();
+            $(`#${payment_index}_content, .${payment_index}_content`).show();
+            $("#payment_type").val(payment_index);
+        });
+    </script>
+</body>
+
+</html>
